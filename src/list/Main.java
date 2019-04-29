@@ -21,7 +21,7 @@ public class Main {
 			NodeExe2 current = list.getHead();
 			NodeExe2 counter = current;
 			while (counter.getNext().getNext() != null) {
-				//current = counter;
+				current = list.getHead();
 				while (current.getNext() != null) {
 					if (current.getData().compareTo(current.getNext().getData()) > 0) {
 						String temp = current.getData();
@@ -45,7 +45,7 @@ public class Main {
 			NodeExe1 current = list.getHead();
 			NodeExe1 counter = current;
 			while (counter.getNext().getNext() != null) {
-				current = counter;
+				current = list.getHead();
 				while (current.getNext() != null) {
 					if (current.getData() > current.getNext().getData()) {
 						int temp = current.getData();
@@ -169,7 +169,12 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
+		//EXERCÌCIO 1:
 		exe1();
+		
+		//-----------------------------------------
+		//EXERCÌCÌO 2;
+		exe2();
 		
 	}
 }
